@@ -3,7 +3,7 @@ export const projects = [
     title: "Walmart Sales Data",
     description: "A scalable cloud hosting platform.",
     images: ["/images/card1.jpg", "/images/card2.jpg"],
-    tech: ["HTML", "SCSS", "Python", "Flask"],
+    tech: ["HTML", "SCSS", "Python",],
     liveLink: "https://github.com/mudassirsidiki/Walmart_Sales_Data_SQL_P3", // If you have a live demo
     githubLink: "https://github.com/mudassirsidiki/Walmart_Sales_Data_SQL_P3" // GitHub Repo Link
   },

@@ -8,11 +8,10 @@ const ProjectCard = ({ title, description, images, tech, liveLink, githubLink })
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setDirection(1);
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      nextImage();
     }, 3000);
     return () => clearInterval(interval);
-  }, [images]);
+  }, [currentImageIndex]);
 
   const nextImage = () => {
     setDirection(1);
@@ -30,17 +29,21 @@ const ProjectCard = ({ title, description, images, tech, liveLink, githubLink })
     <div className="relative bg-gray-900/40 backdrop-blur-lg border border-white/10 text-white p-4 rounded-xl shadow-lg overflow-hidden">
       {/* Image Carousel */}
       <div className="relative w-full h-48 overflow-hidden rounded-lg">
-        <AnimatePresence initial={false} custom={direction}>
-          <motion.img
+        <AnimatePresence custom={direction} mode="popLayout">
+          <motion.div
             key={currentImageIndex}
-            src={images[currentImageIndex]}
-            alt={title}
-            className="absolute w-full h-48 object-cover rounded-lg"
-            initial={{ x: direction * 100, opacity: 0 }}
+            initial={{ x: direction * 150, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -direction * 100, opacity: 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-          />
+            exit={{ x: -direction * 150, opacity: 0 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+            className="absolute w-full h-full"
+          >
+            <img
+              src={images[currentImageIndex]}
+              alt={title}
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </motion.div>
         </AnimatePresence>
       </div>
 

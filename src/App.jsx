@@ -7,7 +7,7 @@ import Squares from "./components/Squares";
 import Rectangles from "./components/Rectangles";
 import TypewriterEffect from "./components/TypewriterEffect";
 import ContactSection from "./components/ContactSection";
-import { projects, skills, skills1, skills2, skills3 } from "./components/data";
+import { projects, projects1, projects2, projects3, projects4, skills, skills1, skills2, skills3 } from "./components/data";
 
 function App() {
   const navLinks = ["#home", "#works", "#about-me", "#contacts"];
@@ -121,16 +121,69 @@ function App() {
       <section className="py-6 px-6 relative" id="projects">
         <Dots className="absolute right-12 top-24 opacity-60" />
         <Squares variant="dotted" className="absolute left-24 bottom-12" />
+
+
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-4xl font-extrabold"><span className="text-[#b49cff]">#</span>PROJECTS</h2>
           </div>
+          <div>FRONTEND PROJECTS - REACT</div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {projects.map((project) => (
               <ProjectCard key={project.title} {...project} />
             ))}
           </div>
         </div>
+
+
+        <div className="max-w-6xl mx-auto">
+          <div className="flex justify-between items-center mb-8"></div>
+          <div>FRONTEND PROJECTS - TAILWINDCSS</div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {projects1.map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
+          </div>
+        </div>
+
+
+        <div className="max-w-6xl mx-auto">
+          <div className="flex justify-between items-center mb-8"></div>
+          <div>FRONTEND PROJECTS - HTML , CSS AND JAVASCRIPT</div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {projects4.map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
+          </div>
+        </div>
+
+
+        <div className="max-w-6xl mx-auto">
+          <div className="flex justify-between items-center mb-8"></div>
+          <div>DATA ANALYTICS PROJECTS - EXCEL , POWER BI , SQL</div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {projects2.map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
+          </div>
+        </div>
+
+
+        <div className="max-w-6xl mx-auto">
+          <div className="flex justify-between items-center mb-8"></div>
+          <div>BUSINESS ANALYTICS PROJECTS - EXCEL , POWER BI , SQL</div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {projects3.map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
+          </div>
+        </div>
+
+
+
+
+       
+
       </section>
 
 

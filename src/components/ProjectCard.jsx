@@ -41,7 +41,7 @@ const ProjectCard = ({ title, description, images, tech, liveLink, githubLink })
             <img
               src={images[currentImageIndex]}
               alt={title}
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-fit rounded-lg"
             />
           </motion.div>
         </AnimatePresence>
@@ -81,7 +81,7 @@ const ProjectCard = ({ title, description, images, tech, liveLink, githubLink })
           href={liveLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-400 hover:underline"
+          className="text-cyan-500 hover:underline"
         >
           View Project →
         </a>

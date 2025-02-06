@@ -97,7 +97,7 @@ export const projects3 = [
     description: "A scalable cloud hosting platform.",
     images: ["/images/card1.jpg", "/images/card2.jpg"],
     tech: ["HTML", "SCSS", "Python",],
-    images: ["/images/PBI-5.1.png", "/images/PBI-5.2.png", "/images/PBI.jpeg", "/images/SQL.jpg" ],
+    images: ["/images/PBI-5.1.png", "/images/PBI-5.2.png", "/images/PBI.jpeg", "/images/EXCEL.jpg" ],
     tech: ["HTML", "SCSS", "Python", "Flask"],
     liveLink: "https://github.com/mudassirsidiki/Walmart_Sales_Data_SQL_P3", // If you have a live demo
     githubLink: "https://github.com/mudassirsidiki/Walmart_Sales_Data_SQL_P3" // GitHub Repo Link
@@ -105,7 +105,7 @@ export const projects3 = [
   {
     title: "ProtectX",
     description: "Security and protection tools for Discord.",
-    images: ["/images/PBI-6.1.png", "/images/PBI-7.1.png", "/images/PBI.jpeg", "/images/SQL.jpg" ],
+    images: ["/images/PBI-6.1.png", "/images/PBI-7.1.png", "/images/PBI.jpeg", "/images/EXCEL.jpg" ],
     tech: ["React", "Express", "Discord.js", "Node.js"],
     liveLink: "https://protectx.com",
     githubLink: "https://github.com/yourusername/protectx"
@@ -113,7 +113,7 @@ export const projects3 = [
   {
     title: "Kahoot Answers Viewer",
     description: "A real-time Kahoot answer viewer tool.",
-    images: ["/images/PBI-8.1.png", "/images/PBI-9.1.jpg", "/images/PBI.jpeg", "/images/SQL.jpg" ],
+    images: ["/images/PBI-8.1.png", "/images/PBI-9.1.jpg", "/images/PBI.jpeg", "/images/EXCEL.jpg" ],
     tech: ["CSS", "Express", "Node.js"],
     liveLink: "https://kahootanswers.com",
     githubLink: "https://github.com/yourusername/kahoot-viewer"
@@ -145,6 +145,38 @@ export const projects4 = [
     title: "Kahoot Answers Viewer",
     description: "A real-time Kahoot answer viewer tool.",
     images: ["/images/3.1.png", "/images/3.2.png", "/images/HCJ.png", "/images/HCJ1.jpg" ],
+    tech: ["CSS", "Express", "Node.js"],
+    liveLink: "https://kahootanswers.com",
+    githubLink: "https://github.com/yourusername/kahoot-viewer"
+  },
+  
+];
+
+
+
+export const projects5 = [
+  {
+    title: "brozovix",
+    description: "A scalable cloud hosting platform.",
+    images: ["/images/card1.jpg", "/images/card2.jpg"],
+    tech: ["HTML", "SCSS", "Python",],
+    images: ["/images/SQL-1.2.png", "/images/SQL-1.3.png", "/images/PSQL.jpg", "/images/PYTHON.jpg" ],
+    tech: ["HTML", "SCSS", "Python", "Flask"],
+    liveLink: "https://github.com/mudassirsidiki/Walmart_Sales_Data_SQL_P3", // If you have a live demo
+    githubLink: "https://github.com/mudassirsidiki/Walmart_Sales_Data_SQL_P3" // GitHub Repo Link
+  },
+  {
+    title: "ProtectX",
+    description: "Security and protection tools for Discord.",
+    images: ["/images/SQL-2.4.png", "/images/SQL-2.3.png", "/images/PSQL.jpg", "/images/PYTHON.jpg" ],
+    tech: ["React", "Express", "Discord.js", "Node.js"],
+    liveLink: "https://protectx.com",
+    githubLink: "https://github.com/yourusername/protectx"
+  },
+  {
+    title: "Kahoot Answers Viewer",
+    description: "A real-time Kahoot answer viewer tool.",
+    images: ["/images/SQL-3.4.png", "/images/SQL-3.3.png", "/images/PSQL.jpg", "/images/PYTHON.jpg" ],
     tech: ["CSS", "Express", "Node.js"],
     liveLink: "https://kahootanswers.com",
     githubLink: "https://github.com/yourusername/kahoot-viewer"
